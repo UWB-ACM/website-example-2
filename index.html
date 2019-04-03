@@ -1,0 +1,83 @@
+<!-- needed for HTML5 (newest shiniest HTML standard) -->
+<!DOCTYPE html>
+<!-- defines the beginning of the HTML markdown. "lang='en'" is an element option, which we will discuss. -->
+<html lang="en">
+  
+<!-- THE HEAD. -->
+<!-- The head is where most of the predefinded "meta" data about your webpage lives. It can define the allowed character set, link stylesheets and scripts for the whole page, and much more! -->
+<head>
+    <!-- Change this! What does it do? -->
+    <title>CHANGEME.yolo</title>
+  	<!-- some fancy character rendering and viewport (browser window) specifications to make our lives easier -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- to use bootstrap stylesheets, we need the following link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="styles.css">
+    <!-- these lines let us use the Javascript libraries for Bootstrap and jQuery, and they are included as a native part of this repo to limit 3rd-party script injection. Hooray! -->
+    <script src="./scripts/jquery.js"></script>
+    <script src="./scripts/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- THE BODY -->
+    <!-- The body is where you add page elements and content. It is the part of the file that makes your website unique and exciting! -->
+    
+    <!-- 1st demo -->
+    <div>
+        <!-- What do you think the markup elements mean? (an element is anything defined by <></> syntax) -->
+        <h3>
+          Hello world!
+        </h3>
+        <p>
+          We are going to do great things together.
+        </p>
+    </div>
+    
+    <!-- 2nd demo (kinda fancy) -->
+    <!-- We are using Bootstrap here, which is what the items saying 'class=""' are for. -->
+    <!-- Each bootstrap style is defined as a CLASS that we can apply to an ELEMENT. -->
+    <!-- As we will see later, we can define our own CSS classes and use them elsewhere! -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Here, we see an inline example of some CSS stylings. Can you guess what this element is going to look like before you see it? -->
+                <div class="row" style="background-color: red">
+                    hello
+                </div>
+                <div class="row" style="background-color: yellow">
+                    world
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row" style="background-color: green">
+                    grid
+                </div>
+                <div class="row" style="background-color: blue">
+                    view
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 3rd demo (very fancy) -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" style="background-color: black">
+                <!-- What do you think is going on here? -->
+                <img class="fit-my-image" src="./site_content/wave_hello.jpg" alt="A friendly ocean wave, waving hello.">
+            </div>
+            <!-- WOT IN TARNATION does this do??? It's an empty element; why is it here??? -->
+            <div class="col-md-8" id="mystery">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Hmmmmmm.... mystery script! -->
+    <script>
+        $( "#mystery" ).load("./site_content/mystery.txt");
+    </script>
+    
+</body>
+
+</html>

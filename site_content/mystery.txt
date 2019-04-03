@@ -1,0 +1,20 @@
+<h1>Hello world!</h1>
+<p>Wow, this was unexpected, huh? Pretty stinking cool!</p>
+<p>The text content in ./site_content/mystery.txt is the content being displayed here! The fancy &#60;script&#62; tag calls jQuery, which injects the contents of the mystery.txt file into the parent element. Neato!
+<!-- Note: the < and > characters MUST be specified by their HTML ASCII equivalents in order to render properly. Word to the wise! -->
+<ul>
+  <li>This is a bullet.
+  <li>The bulleted list is created with an element called "ul".
+  <li>Each bulleted item is created with an element called "li".
+  <li>The "li" element does NOT require a close, but the "ul" element does.
+  <li>This is another bullet.
+  <li>One more, just for posterity.
+</ul>
+<ol>
+  <li>This is an ordered list.
+  <li>Instead of creating it with an element called "ul", it's created with an element called "ol".
+  <li>Numero tres
+  <li>My quads are ripped
+  <li>The quintessential item
+</ol>
+</p>
