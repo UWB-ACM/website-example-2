@@ -4,3 +4,32 @@
     object-fit: cover;
     
 }
+
+.section-container {
+    background-color: midnightblue;
+    display: flex;
+}
+
+.section {
+    background-color: snow;
+    text-align: center;
+    color: black;
+    margin: 40px;
+    border: 5px solid orangered;
+    padding: 20px;
+    background-clip: content-box;
+    box-shadow: inset 0 0 0 20px cornflowerblue;
+    flex-grow: 1;
+}
+
+.spacer {
+    height: 80px;
+}
+
+.spacer-small {
+    height: 10px;
+}
+
+.section-text {
+    padding: 5px;
+}
