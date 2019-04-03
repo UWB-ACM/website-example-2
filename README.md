@@ -7,8 +7,11 @@ This repository includes examples of the following web development constructs:
 
 - HTML DOM 
 - HTML tags
+- CSS in-line styling for elements
+- CSS stylesheet rules for styling elements globally
 - Use of Bootstrap (CSS library) to enable responsive, mobile-friendly page structure
 - Simple example of jQuery to inject content into elements
+- Simple examples of Javascript for interactive elements
 
 ## Build the Site Locally
 
