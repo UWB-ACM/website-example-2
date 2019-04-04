@@ -4,3 +4,6 @@ _site/
 .jekyll-metadata
 # just in case
 Gemfile.lock
+
+# no vim temp files!
+.*.sw?
