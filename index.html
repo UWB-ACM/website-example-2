@@ -105,7 +105,34 @@
     <script>
         $( "#mystery" ).load("./site_content/mystery.txt");
     </script>
-    
+
+    <!-- 4th section-->
+    <div class="spacer"></div>
+    <div class="section-container">
+        <div class="section">
+            <h1 class="section-text">Javascript Demo</h1>
+            <h5 class="section-text">The elements in this section utilize custom Javascript methods and routines to do interesting things.</h5>
+        </div>
+    </div>
+    <div class="spacer-small"></div>
+
+    <script src="./scripts/buttonsDoThings.js"></script>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" style="background-color: red">
+                <button onClick="getNextMeme()" style="padding: 15px; margin: 15px;">This button will rotate through a set of images!</button>
+                <img href="" id="memes" class="fit-my-image">
+            </div>
+            <div class="col-md-4" style="background-color: green">
+                <h1>TBD</h1>
+            </div>
+            <div class="col-md-4" style="background-color: blue">
+                <h1>A Third Thing Here!</h1>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
