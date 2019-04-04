@@ -1,3 +1,8 @@
+/*
+ * Here's a file that defines variables and functions related to
+ * buttons on index.html.
+ */
+
 // here we define a variable to hold the current filename
 var index = -1;
 
@@ -33,3 +38,5 @@ function getNextMeme() {
     // now we set the image div's source to the filename at new index
     imgDiv.src = memeFiles[index];
 }
+
+
