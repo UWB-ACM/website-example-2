@@ -126,17 +126,37 @@
             </div>
             <div class="col-md-4" style="background-color: green">
                 <div class="row">
-                <p style="padding: 15px; margin: 15px">Click the button below to get a JavaScript alert in your window!</p>
+                <p style="padding: 15px; margin: 15px; background-color: snow;">Click the button below to get a JavaScript alert in your window!</p>
                 </div>
                 <div class="row">
                     <button onclick="makeAlert()" style="padding: 15px; margin: 15px; text-align: center;">Click Me!</button>
                 </div>
             </div>
             <div class="col-md-4" style="background-color: blue">
-                <h1>A Third Thing Here!</h1>
+                <div style="padding: 15px; margin: 15px; background-color: snow;">
+                <p>Type content in the text box and watch it generate in the div below! The first section will show the unsanitized output, and the second section shows the sanitized output. Sanitizing form input can prevent malicious or accidental manipulation of your site.<br>To see an example of the difference, try pasting one of the following snippets:
+                <br>
+                <code>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</code>
+                <br>or perhaps<br><code>IS IT WORKING YET&lt;/br&gt; &lt;img src="http://2.bp.blogspot.com/-x2_8ib6NEB0/Ur32TJiiheI/AAAAAAAAPiU/He_fZF97GDM/s1600/Oh-shit-Im-okay.gif"&gt;</code>
+                <br>or what about<br><code>CAUTION CAUTION &lt;script&gt;window.alert("you got HACKED");&lt;/script&gt;</code>
+                </p>
+                </div>
+                <input id="typeHere" type="text" placeholder="Type some things here!"></input>
+                <div style="background-color: snow;">
+                <div>
+                <p><b>Unsanitized</b> output goes here:</p>
+                <p id="outputUnsanitized"></p>
+                </div>
+                <div>
+                <p><b>Sanitized</b> output goes here:</p>
+                <p id="outputSanitized"></p>
+                </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <script src="./scripts/input.js"></script>
 
 </body>
 
