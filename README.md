@@ -19,7 +19,7 @@ To see the site in action, you can use the following toolkits to build the site 
 
 #### ngrok
 
-TODO :bug:
+Details about installing, configuring, and using `ngrok` to test this site are available [here](https://docs.uwbhacks.com/team-tools/ngrok/testing-your-site-with-ngrok).
 
 #### jekyll
 
