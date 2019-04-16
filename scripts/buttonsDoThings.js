@@ -39,4 +39,21 @@ function getNextMeme() {
     imgDiv.src = memeFiles[index];
 }
 
+var alertText = [
+                 "I see you found the 'alert' button. ( ͡° ͜ʖ ͡°)",
+                 "Beep Beep\nWeb Dev Police\nJavaScript is not Java",
+                 "Hi there!",
+                 "FILLER TEXT",
+                 "UWB Hacks the Internet",
+                 "FILLER TEXT 2\nElectric Boogaloo",
+                ]
 
+var alertIndex = 0;
+
+function makeAlert() {
+    if (alertIndex >= alertText.length) {
+        alertIndex = 0;
+    }
+    alert(alertText[alertIndex]);
+    alertIndex += 1;
+}
