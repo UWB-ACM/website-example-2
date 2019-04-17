@@ -121,36 +121,32 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4" style="background-color: red">
-                <button onClick="getNextMeme()" style="padding: 15px; margin: 15px;">This button will rotate through a set of images!</button>
+                <button onClick="getNextMeme()" class="paddi-boi">This button will rotate through a set of images!</button>
                 <img href="" id="memes" class="fit-my-image">
             </div>
             <div class="col-md-4" style="background-color: green">
                 <div class="row">
-                <p style="padding: 15px; margin: 15px; background-color: snow;">Click the button below to get a JavaScript alert in your window!</p>
+                <p class="paddi-boi light-bg">Click the button below to get a JavaScript alert in your window!</p>
                 </div>
                 <div class="row">
-                    <button onclick="makeAlert()" style="padding: 15px; margin: 15px; text-align: center;">Click Me!</button>
+                    <button onclick="makeAlert()" class="paddi-boi">Click Me!</button>
                 </div>
             </div>
             <div class="col-md-4" style="background-color: blue">
-                <div style="padding: 15px; margin: 15px; background-color: snow;">
-                <p>Type content in the text box and watch it generate in the div below! The first section will show the unsanitized output, and the second section shows the sanitized output. Sanitizing form input can prevent malicious or accidental manipulation of your site.<br>To see an example of the difference, try pasting one of the following snippets:
+                <div class="row">
+                <p class="paddi-boi light-bg">Type content in the text box and watch it generate in the div below! The first section will show the unsanitized output, and the second section shows the sanitized output. Sanitizing form input can prevent malicious or accidental manipulation of your site.<br>To see an example of the difference, try pasting one of the following snippets:
                 <br>
                 <code>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</code>
                 <br>or perhaps<br><code>IS IT WORKING YET&lt;/br&gt; &lt;img src="http://2.bp.blogspot.com/-x2_8ib6NEB0/Ur32TJiiheI/AAAAAAAAPiU/He_fZF97GDM/s1600/Oh-shit-Im-okay.gif"&gt;</code>
-                <br>or what about<br><code>CAUTION CAUTION &lt;script&gt;window.alert("you got HACKED");&lt;/script&gt;</code>
+                <br>or what about<br><code>CAUTION CAUTION &lt;img onerror="alert('you got HACKED')" src/&gt;</code>
                 </p>
                 </div>
-                <input id="typeHere" type="text" placeholder="Type some things here!"></input>
-                <div style="background-color: snow;">
-                <div>
+                <textarea cols="20" rows="3" id="typeHere" type="text" placeholder="Type some things here!"></textarea>
+                <div class="paddi-boi light-bg">
                 <p><b>Unsanitized</b> output goes here:</p>
                 <p id="outputUnsanitized"></p>
-                </div>
-                <div>
                 <p><b>Sanitized</b> output goes here:</p>
                 <p id="outputSanitized"></p>
-                </div>
                 </div>
             </div>
         </div>

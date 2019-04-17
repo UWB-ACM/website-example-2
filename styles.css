@@ -33,3 +33,12 @@
 .section-text {
     padding: 5px;
 }
+
+.paddi-boi {
+    margin: 15px;
+    padding: 15px;
+}
+
+.light-bg {
+    background-color: snow;
+}
