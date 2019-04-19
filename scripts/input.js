@@ -5,7 +5,6 @@
 
 var getTheText = document.getElementById('typeHere');
 var output = document.getElementById('outputUnsanitized');
-var outputSan = document.getElementById('outputSanitized');
 
 getTheText.oninput = updateValue;
 // getTheText.addEventListener('change', updateValue);
